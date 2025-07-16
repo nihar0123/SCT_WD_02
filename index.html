@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Stopwatch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1 class="app-title">Neon<span>Stopwatch</span></h1>
+      <p class="app-subtitle">Precision time tracking</p>
+    </header>
+
+    <div class="stopwatch-display">
+      <div class="time-display">
+        <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>.<span id="milliseconds">00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="control-btn start">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="pause-btn" class="control-btn pause" disabled>
+        <i class="fas fa-pause"></i>
+      </button>
+      <button id="reset-btn" class="control-btn reset">
+        <i class="fas fa-redo"></i>
+      </button>
+      <button id="lap-btn" class="control-btn lap">
+        <i class="fas fa-flag"></i>
+      </button>
+    </div>
+
+    <div class="laps-container">
+      <h3 class="laps-title">Lap Times</h3>
+      <ul id="laps-list" class="laps-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
